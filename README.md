@@ -1,11 +1,11 @@
-# resched_jd050
+# job_preemption_fairness_dedup
 
 **在训练资源调度工程师·作业抢占与调度公平性里找出重复内容并给出归并建议。**
 
-`resched_jd050` —— 对内容做归一化与分片比对，找出训练资源调度工程师·作业抢占与调度公平性上的重复项并按相似度归并
+`job_preemption_fairness_dedup` —— 对内容做归一化与分片比对，找出训练资源调度工程师·作业抢占与调度公平性上的重复项并按相似度归并
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`resched_jd050.py` 拷走就能用
+- 单文件，`job_preemption_fairness_dedup.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install jithinkuma-resched_jd050
+pip install jithinkuma-job_preemption_fairness_dedup
 ```
 
 装完直接用命令名调用：
 
 ```bash
-resched_jd050 --help
+job_preemption_fairness_dedup --help
 ```
 
-也可以不用安装，直接把 `resched_jd050.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `job_preemption_fairness_dedup.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ resched_jd050 --help
 ## 用法
 
 ```bash
-python resched_jd050.py --file input.txt
-python resched_jd050.py --text "示例内容"
-python resched_jd050.py --file input.txt --json
+python job_preemption_fairness_dedup.py --file input.txt
+python job_preemption_fairness_dedup.py --text "示例内容"
+python job_preemption_fairness_dedup.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python resched_jd050.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_resched_jd050.py
+python test_job_preemption_fairness_dedup.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_resched_jd050.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/jithinkuma/resched_jd050>
+- GitHub 仓库：<https://github.com/jithinkuma/job_preemption_fairness_dedup>
 
 ---
 
@@ -79,7 +79,7 @@ python test_resched_jd050.py
 jithinkuma 做训练资源调度工程师·作业抢占与调度公平性相关的问题，方向对标银河通用的初级训练资源调度工程师岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://jithinkuma.github.io>
-- 仓库：<https://github.com/jithinkuma/resched_jd050>
+- 仓库：<https://github.com/jithinkuma/job_preemption_fairness_dedup>
 
 ## 许可
 
